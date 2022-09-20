@@ -148,9 +148,9 @@ class WebGraph():
             for i in range(max_iterations):
                 xprev = x.detach().clone()
 
-                a = (alpha*x.t()@a +(1-alpha))*v.t()
+                s = (alpha*x.t()@a +(1-alpha))*v.t()
                 x = torch.sparse.addmm(
-                    a.t(),
+                    s.t(),
                     self.P.t(),
                     x ,
                     beta = 1,
