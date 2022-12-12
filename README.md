@@ -263,7 +263,7 @@ Implement the "better method" described above.
 You will have to modify the `WebGraph.search` function so that it implements the pseudocode described above,
 and orders documents according to the `ranking` score instead of according to `pi`.
 
-<!--
+
 
 
 ## Submission
